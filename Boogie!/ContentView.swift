@@ -10,10 +10,26 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Boogie Wonderland!")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            HStack {
+                Image(systemName: "globe")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(.teal)
+                
+                Image(systemName: "wind")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(.blue)
+                
+                Image(systemName: "flame")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(.red)
+            }
+            
         }
         .padding()
     }
